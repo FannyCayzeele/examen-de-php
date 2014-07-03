@@ -327,7 +327,7 @@ else
 
 //qcm
 
-/*
+
 if($_SESSION['reponse1'] == $_POST['reponse1'] && $_SESSION['reponse2'] == $_POST['reponse2'] && $_SESSION['reponse3'] == $_POST['reponse3'] && isset($_POST['reponse1']) && isset($_POST['reponse2']) && isset($_POST['reponse3']))
 {
 	$_SESSION['qcm_info'] = '';
@@ -338,10 +338,10 @@ else
 	$_SESSION['qcm_info'] = '<span class="erreur">Au moins une des réponses au QCM charte est fausse.</span><br/>';
 	$_SESSION['erreurs']++;
 }
-*/
+
 
 //captcha
-/*
+
 
 if($_POST['captcha'] == $_SESSION['captcha'] && isset($_POST['captcha']) && isset($_SESSION['captcha']))
 {
@@ -357,7 +357,7 @@ else
 unset($_SESSION['reponse1'], $_SESSION['reponse2'], $_SESSION['reponse3']);
 unset($_SESSION['captcha']);
 
-*/
+
 
 /*************Fin étude******************/
 ?>
