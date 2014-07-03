@@ -296,4 +296,5 @@ function inscription_mail($mail, $pseudo, $passe)
 {
 	$to = $mail;
 	$subject = 'Inscription sur '.TITRESITE.' - '.$pseudo;
+}
 ?>
