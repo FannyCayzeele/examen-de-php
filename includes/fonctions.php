@@ -291,9 +291,7 @@ function vidersession()
 		unset($_SESSION[$cle]);
 	}
 }
-?>
 
-<?php
 function inscription_mail($mail, $pseudo, $passe)
 {
 	$to = $mail;
