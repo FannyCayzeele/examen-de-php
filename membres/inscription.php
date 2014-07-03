@@ -81,8 +81,8 @@ include('../includes/haut.php'); //contient le doctype, et head.
 				echo $_SESSION['mail_info'];
 				echo $_SESSION['mail_verif_info'];
 				echo $_SESSION['date_naissance_info'];
-				//echo $_SESSION['qcm_info'];
-				//echo $_SESSION['captcha_info'];
+				echo $_SESSION['qcm_info'];
+				echo $_SESSION['captcha_info'];
 			?>
 			Nous vous avons pré-rempli les champs qui étaient corrects.<br/>
 			<!--Note : la partie QCM et image est entièrement à refaire, que vous vous soyez trompé ou non.-->
@@ -104,7 +104,7 @@ include('../includes/haut.php'); //contient le doctype, et head.
 					<label for="mail_verif" class="float">Mail (vérification) :</label> <input type="text" name="mail_verif" id="mail_verif" size="30" value="<?php if($_SESSION['mail_verif_info'] == '') echo htmlspecialchars($_SESSION['form_mail_verif'], ENT_QUOTES) ; ?>" /><br />
 					<label for="date_naissance" class="float">Date de naissance :</label> <input type="text" name="date_naissance" id="date_naissance" size="30" value="<?php if($_SESSION['date_naissance_info'] == '') echo htmlspecialchars($_SESSION['form_date_naissance'], ENT_QUOTES) ; ?>" /> <em>(format JJ/MM/AAAA)</em><br/>
 				</fieldset>
-				<!--<fieldset><legend>Charte du site et protection anti-robot</legend>
+				<fieldset><legend>Charte du site et protection anti-robot</legend>
 					<?php
 					//include('../includes/charte.php');
 					?>
@@ -120,7 +120,7 @@ include('../includes/haut.php'); //contient le doctype, et head.
 					Si vous êtes dans l'incapacité de lire plusieurs images d'affilée, <a href="../contact.php">contactez-nous</a>, nous nous occuperons de votre inscription.</p>
 					<label for="captcha" class="float">Entrez les 8 caractères (majuscules ou chiffres) contenus dans l'image :</label> <input type="text" name="captcha" id="captcha"><br/>
 					<img src="captcha.php" />
-				</fieldset>-->
+				</fieldset>
 				<div class="center"><input type="submit" value="Inscription" /></div>
 			</form>
 		</div>
