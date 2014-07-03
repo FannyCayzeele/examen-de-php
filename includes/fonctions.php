@@ -192,12 +192,7 @@ function vider_cookie()
 		setcookie($cle, '', time()-3600);
 	}
 }
-?>
 
-
-
-
-<?php
 function checkpseudo($pseudo)
 {
 	if($pseudo == '') return 'empty';
@@ -214,9 +209,8 @@ function checkpseudo($pseudo)
 		else return 'ok';
 	}
 }
-?>
 
-<?php
+
 function checkmdp($mdp)
 {
 	if($mdp == '') return 'empty';
@@ -230,17 +224,15 @@ function checkmdp($mdp)
 		else return 'ok';
 	}
 }
-?>
 
-<?php
+
 function checkmdpS($mdp, $mdp2)
 {
 	if($mdp != $mdp2 && $mdp != '' && $mdp2 != '') return 'different';
 	else return checkmdp($mdp);
 }
-?>
 
-<?php
+
 function checkmail($email)
 {
 	if($email == '') return 'empty';
@@ -256,17 +248,15 @@ function checkmail($email)
 		else return 'ok';
 	}
 }
-?>
 
-<?php
+
 function checkmailS($email, $email2)
 {
 	if($email != $email2 && $email != '' && $email2 != '') return 'different';
 	else return 'ok';
 }
-?>
 
-<?php
+
 function birthdate($date)
 {
 	if($date == '') return 'empty';
@@ -293,9 +283,7 @@ function birthdate($date)
 		}
 	}
 }
-?>
 
-<?php
 function vidersession()
 {
 	foreach($_SESSION as $cle => $element)
